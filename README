@@ -14,9 +14,16 @@ Attributions (NEEDS TO BE UPDATED):
 	lazyfoo		- SDL tutorials
 
 Purpose:
-	This project is an attempt at building a reuseable 2D game engine.  It is primarily aimed at development of side-scrolling platform-type games.
+	This project is an attempt at building a reuseable 2D game engine.  It
+	is primarily aimed at development of side-scrolling platform-type games.
 
-	The goal is to create a 2D Game Engine that, in it's first major version, contains the basic features any 2D side-scrolling game will need.  Then, during development of the game(s) using this engine, to write code that can be integrated into the game engine itself when adding new features.  Each major set of feature-integration will constitute a new major version of the engine, and minor features will constitute minor versions of the engine.
+	The goal is to create a 2D Game Engine that, in it's first major version
+	, contains the basic features any 2D side-scrolling game will need.  
+	Then, during development of the game(s) using this engine, to write code
+	that can be integrated into the game engine itself when adding new
+	features.  Each major set of feature-integration will constitute a new
+	major version of the engine, and minor features will constitute minor 
+	versions of the engine.
 
 List of games built with this engine (WILL NEED TO BE UPDATED):
 	Demo Game (included in the engine distrubiton as a sample game.)

@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\img">
+      <UniqueIdentifier>{541d8c04-683f-4609-b947-3c31fff19c41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\fonts">
+      <UniqueIdentifier>{87211dec-81b8-4b7b-aa71-25e7bf2d78ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\fonts\Cantarell">
+      <UniqueIdentifier>{6129d5b9-fec5-47ec-ab32-882427c6e0e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\DLLs">
+      <UniqueIdentifier>{7203c2e5-d1a2-4258-ac30-c7ff2101584a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main_tester.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_Core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_Draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_FPS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_LoadAssets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_Rect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_Text.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_TextStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_Timer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GE_Util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GE_Conversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Draw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_LoadAssets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Metrics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Rect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Text.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_TextStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GE_Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\img\ball.png">
+      <Filter>Resource Files\img</Filter>
+    </None>
+    <None Include="res\fonts\Cantarell\FONTLOG.txt">
+      <Filter>Resource Files\fonts\Cantarell</Filter>
+    </None>
+    <None Include="res\fonts\Cantarell\Abattis Cantarell GPL License.txt">
+      <Filter>Resource Files\fonts\Cantarell</Filter>
+    </None>
+    <None Include="res\fonts\Cantarell\Cantarell-Bold.ttf">
+      <Filter>Resource Files\fonts\Cantarell</Filter>
+    </None>
+    <None Include="res\fonts\Cantarell\Cantarell-BoldOblique.ttf">
+      <Filter>Resource Files\fonts\Cantarell</Filter>
+    </None>
+    <None Include="res\fonts\Cantarell\Cantarell-Oblique.ttf">
+      <Filter>Resource Files\fonts\Cantarell</Filter>
+    </None>
+    <None Include="res\fonts\Cantarell\Cantarell-Regular.ttf">
+      <Filter>Resource Files\fonts\Cantarell</Filter>
+    </None>
+    <None Include="libfreetype-6.dll">
+      <Filter>Resource Files\DLLs</Filter>
+    </None>
+    <None Include="SDL_ttf.dll">
+      <Filter>Resource Files\DLLs</Filter>
+    </None>
+    <None Include="libjpeg-8.dll">
+      <Filter>Resource Files\DLLs</Filter>
+    </None>
+    <None Include="libpng15-15.dll">
+      <Filter>Resource Files\DLLs</Filter>
+    </None>
+    <None Include="libtiff-5.dll">
+      <Filter>Resource Files\DLLs</Filter>
+    </None>
+    <None Include="libwebp-2.dll">
+      <Filter>Resource Files\DLLs</Filter>
+    </None>
+    <None Include="SDL.dll">
+      <Filter>Resource Files\DLLs</Filter>
+    </None>
+    <None Include="SDL_image.dll">
+      <Filter>Resource Files\DLLs</Filter>
+    </None>
+    <None Include="zlib1.dll">
+      <Filter>Resource Files\DLLs</Filter>
+    </None>
+  </ItemGroup>
+</Project>

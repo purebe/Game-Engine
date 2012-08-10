@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{11F40028-2192-4A62-95AA-7211790B5174}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GameEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\SDL_image-1.2.12\include;C:\SDL-1.2.15\include;C:\SDL_ttf-2.0.11\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\SDL_ttf-2.0.11\lib\x86;C:\SDL_image-1.2.12\lib\x86;C:\SDL-1.2.15\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\SDL-1.2.15\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\SDL-1.2.15\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL.lib;SDLmain.lib;SDL_image.lib;SDL_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="GE_Core.cpp" />
+    <ClCompile Include="GE_Draw.cpp" />
+    <ClCompile Include="GE_Text.cpp" />
+    <ClCompile Include="GE_FPS.cpp" />
+    <ClCompile Include="GE_LoadAssets.cpp" />
+    <ClCompile Include="GE_Rect.cpp" />
+    <ClCompile Include="GE_TextStream.cpp" />
+    <ClCompile Include="GE_Timer.cpp" />
+    <ClCompile Include="GE_Util.cpp" />
+    <ClCompile Include="main_tester.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GE_Conversion.h" />
+    <ClInclude Include="GE_Core.h" />
+    <ClInclude Include="GE_Draw.h" />
+    <ClInclude Include="GE_Text.h" />
+    <ClInclude Include="GE_TextStream.h" />
+    <ClInclude Include="GE_LoadAssets.h" />
+    <ClInclude Include="GE_Metrics.h" />
+    <ClInclude Include="GE_Rect.h" />
+    <ClInclude Include="GE_Timer.h" />
+    <ClInclude Include="GE_Util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libfreetype-6.dll" />
+    <None Include="libjpeg-8.dll" />
+    <None Include="libpng15-15.dll" />
+    <None Include="libtiff-5.dll" />
+    <None Include="libwebp-2.dll" />
+    <None Include="res\fonts\Cantarell\Abattis Cantarell GPL License.txt" />
+    <None Include="res\fonts\Cantarell\Cantarell-Bold.ttf" />
+    <None Include="res\fonts\Cantarell\Cantarell-BoldOblique.ttf" />
+    <None Include="res\fonts\Cantarell\Cantarell-Oblique.ttf" />
+    <None Include="res\fonts\Cantarell\Cantarell-Regular.ttf" />
+    <None Include="res\fonts\Cantarell\FONTLOG.txt" />
+    <None Include="res\img\ball.png" />
+    <None Include="SDL.dll" />
+    <None Include="SDL_image.dll" />
+    <None Include="SDL_ttf.dll" />
+    <None Include="zlib1.dll" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
